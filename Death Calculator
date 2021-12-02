@@ -1,0 +1,16 @@
+# Your life in weeks
+# Thank you u/theoyeo
+
+print("Welcome to the Death Calculator!")
+TotalWeeks = 4250
+age = int(input("How old are you?\n"))
+TotalYears = 90
+TotalMonths = 1080
+TotalDays = 32850
+
+YearsLeft = TotalYears - int(age)
+MonthsLeft = int(TotalMonths) - int(age * 12)
+WeeksLeft = int(TotalWeeks) - int(age * 56)
+DaysLeft = int(TotalDays) - int(age * 365)
+
+print(f"You have {YearsLeft} Years, {MonthsLeft} Months, {WeeksLeft} Weeks, and {DaysLeft} Days left until you're dead!")
