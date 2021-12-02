@@ -1,0 +1,15 @@
+#Tip Calculator
+
+print("Welcome to the time waster Tip Calculator!")
+
+Bill = float(input("How much was the Bill?\n"))
+Split = float(input("How many people are paying\n"))
+Tax = 0.0825
+Tip = 0.15
+SubTotalTax = Bill * Tax
+SubTotalTip = Bill * Tip
+SubTotal = SubTotalTax + SubTotalTip + Bill
+TotalSplit = SubTotal / Split
+
+print("Looks like you're going to each have to pay\n")
+print(TotalSplit)
