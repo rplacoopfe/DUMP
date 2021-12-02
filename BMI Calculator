@@ -1,0 +1,12 @@
+#BMI
+
+print("Welcome to the Fantastic BMI Calculator!")
+
+Height = float(input("How tall are you? (USE INCHES)\n"))
+Weight = float(input("What is your weight? (USE LBS)\n"))
+
+
+
+BMI = (Weight / Height ** 2)
+BMIWhole = int(BMI * 703)
+print(BMIWhole)
