@@ -1,0 +1,9 @@
+import random
+
+random_integer = int(random.randint(1,10))
+print(int(random_integer))
+
+if random_integer %2 == 0:
+    print("Heads")
+else:
+    print("Tails")
