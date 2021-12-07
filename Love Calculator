@@ -1,0 +1,32 @@
+# Love Calculator
+
+print("Welcome to the Love Calculator!")
+
+name1 = input("What is your name?\n")
+name2 = input("What is their name\n")
+
+combined_names = name1 + name2
+
+lowercasenames = combined_names.lower()
+
+# trying to get the names to count up against truelove, and add them into a number.
+
+T = lowercasenames.count("t")
+R = lowercasenames.count("r")
+U = lowercasenames.count("u")
+E = lowercasenames.count("e")
+
+L = lowercasenames.count("l")
+O = lowercasenames.count("o")
+V = lowercasenames.count("v")
+E1 = lowercasenames.count("e")
+
+add_true = T + R + U + E + L + O + V + E1
+
+
+print(int(add_true))
+
+if add_true < 3 or add_true > 10:
+    print(f"Your score is:{add_true}\nYou go together like Coke and Mentos")
+else:
+    print(f"Here is your score {add_true}")
