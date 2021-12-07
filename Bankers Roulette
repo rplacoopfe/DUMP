@@ -1,0 +1,7 @@
+# Bankers Roulette
+import random
+# Bankers putting names in a hat, and picking a random person to pay. simple game, using randchoices
+names = input("Give me everyone's name seperated by a Comma.\n")
+namelist = names.split(",")
+
+print(random.choice(namelist))
