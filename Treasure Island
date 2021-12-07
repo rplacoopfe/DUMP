@@ -1,0 +1,48 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+#Write your code below this line 👇
+
+first_choice = input("Lets start off exploring, Will you go East or West?\n").lower()
+
+if first_choice == "east":
+    print(f"You walked east through a jungle and fell into a pit trap! \n GAME OVER!")
+else:
+    print("You head west onto a new adventure!, you'll have many booties await you!\n")
+
+second_choice = input("You come to a river that seems a bit too long to swim over\n "
+                      "Will you swim over or go around?").lower()
+
+if second_choice == "swim":
+    print("you drown")
+else:
+    print("You follow the bank and find many coins on the shore from people that died in this rampaging river\n")
+
+third_choice = input("after a few hours you reach an old temple and come up to face 3 doors, Red, Blue and "
+                     "Yellow, Which door will you choose").lower()
+
+if third_choice == "red" or third_choice == "blue":
+    print("you die to getting back stabbed by the locals")
+else:
+    print("You stole all the Treasure behind the Yellow door and left before the locals go mad.\n YOU WIN")
