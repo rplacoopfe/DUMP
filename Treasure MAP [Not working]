@@ -1,0 +1,35 @@
+
+
+
+
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? 1-3 across and then up/down.\n e.g(11, 32,22)\n")
+
+
+
+
+# map out the squares, each square needs a variable
+
+one_one = row1[0]
+one_two = row2[0]
+one_three = row3[0]
+
+two_one = row1[1]
+two_two = row2[1]
+two_three = row3[1]
+
+three_one = row1[2]
+three_two = row2[2]
+three_three = row3[2]
+
+# if statements to delete and append the squares with X's
+if position == "11":
+    one_one[row1] = "X"
+print(f"{row1}\n{row2}\n{row3}")
+# list.__delitem__(one_one) list.insert(one_one,x) possible changes for line 31
+
+
