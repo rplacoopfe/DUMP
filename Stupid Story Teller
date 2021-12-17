@@ -1,0 +1,50 @@
+# Random module practice
+
+art = '''   _____________  ______  ________     _______________  ______  __
+  / ___/_  __/ / / / __ \/  _/ __ \   / ___/_  __/ __ \/ __ \ \/ /
+  \__ \ / / / / / / /_/ // // / / /   \__ \ / / / / / / /_/ /\  / 
+ ___/ // / / /_/ / ____// // /_/ /   ___/ // / / /_/ / _, _/ / /  
+/____//_/  \____/_/   /___/_____/   /____//_/  \____/_/ |_| /_/ '''
+import random
+animal = ["Snake", "Cow", "Hedgehog", "Echidna", "Snail", "Monkey", "Ape", "Lion", "Tiger", "Fox", "Bear", "Seagull"]
+color = ["White", "Black", "Red", "Blue", "Green", "Yellow"]
+days = str(random.randrange(1,1001))
+weapon = ["Bat", "Puny stick", "Golf club", "Tire Iron", "Sausage", "Crippling Depression", "Gun"]
+location = ["Venice", "Rome", "Sweden", "Finland", "Downtown Detroit", "Hyrule", "Russia", "Siberia", "Iowa"]
+enemy = ["Joe", "Robin Williams", "George Russel", "Luwis Hammertime", "Supr Max", "Puma", "Vladimir Putin", "America",]
+
+#Make a dumb story that will have absolutely random stuff that happens
+#use stupid questions to get inputs
+
+print(f"{art}\nWelcome to the random stupid story Generator!")
+age = input("How old are you?\n")
+fav_num = input("what is your fave number?\n")
+
+#I want to use the two inputs to randomize the output into the story.
+
+random_animal = random.choice(animal)
+random_color = random.choice(color)
+random_days = random.choice(days)
+random_weapon = random.choice(weapon)
+random_location = random.choice(location)
+random_enemy = random.choice(enemy)
+
+
+
+
+
+#rough draft of story
+print(f"You start of on a journy from your home, You're a year into the trip and you've had many ups and downs. \n"
+      f"you've met a {random_color} {random_animal} on your journy and it even almost killed you!\n"
+      f"You ended up giving it some of your "
+      f"food and it started to follow you.\nAfter your encounter with the animal, you needed to find a weapon, you start "
+      f"heading to {random_location} \nWhen you get there you find a {random_weapon}, and things are looking up. \nYou have protection and "
+      f"even found some supplies to last you awhile.\n"
+      f"You pack up all your supplies and head on out, you suddenly hear a voice\n\n"
+      f"'YOU THERE! HANDS UP! OR ELSE I SHOOT!'\n"
+      f"You raise you hands and give him everything you have.\n"
+      f"'Why are you doing this!' you yell...\n"
+      f"the bandit looks back at you...\n"
+      f"'Remember my name...{random_enemy} , remember that I pwned you, come for me. So I can do it again!'\n"
+      f"Just as he turns around after roasting your ass, He spits on you and leaves you to die.\n"
+      f"you have survived {random_days}\nThe end")
