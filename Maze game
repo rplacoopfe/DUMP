@@ -1,0 +1,25 @@
+#https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+#Lost in the maze game
+
+def check():
+    if wall_on_right() is False:
+        turn_right()
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while at_goal() is False:
+    if right_is_clear() is True:
+        turn_right()
+    while front_is_clear() is True:
+        move()
+        check()
+        if at_goal() is True:
+            break
+
+    else:
+        turn_left()
+    if at_goal is True:
+        break
+
