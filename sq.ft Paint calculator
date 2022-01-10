@@ -1,0 +1,12 @@
+#todo Creat a program to calculate an area for paint, and round up to a whole number.
+import math
+def paint_calc(height, width, cover):
+    area = height * width
+    num_of_cans = math.ceil(area / cover)
+    print(f"You'll need {num_of_cans} cans of paint")
+    return
+coverage = 5
+h = int(input("How tall is the wall you want to paint?\n sq.ft:"))
+w = int(input("How wide is the wall?\n sq.ft:"))
+
+paint_calc(height=h, width=w, cover=coverage)
